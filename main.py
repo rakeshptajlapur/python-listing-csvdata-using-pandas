@@ -38,6 +38,7 @@ with col3:
         st.image(f'images/{row_data["image"]}', width=200)
         st.header(row_data["title"])
         st.write(row_data["description"])
+        st.write(f'[Project Link]({row_data["url"]})')
 
 with col4:
     for index, row_data in df[10:].iterrows():
