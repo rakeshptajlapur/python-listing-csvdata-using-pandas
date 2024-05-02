@@ -45,6 +45,7 @@ with col4:
         st.image(f'images/{row_data["image"]}', width=200)
         st.header(row_data["title"])
         st.write(row_data["description"])
+        st.write(f'[Project Link]({row_data["url"]})')
 
 
 
