@@ -24,7 +24,7 @@ with col2:
     st.info(description)
 
 
-col3, col4= st.columns(2)
+col3,empty_col, col4= st.columns([1.5, 0.5, 1.5]) #creating empty column so to add some spacing in between 3 and 4 column
 #read csv data using pandas and save in object df
 df = pandas.read_csv('data.csv', sep=';')
 
